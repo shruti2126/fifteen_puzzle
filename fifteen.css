@@ -1,0 +1,46 @@
+/*
+Name: Shruti Sharma
+Class: CSE 154 SECTION AG
+TA: Nicole Riley
+
+This is the CSS stylesheet for the fifteen puzzle game.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 14pt;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#puzzle-area {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+.tile {
+  position: absolute;
+  line-height: 190%; /* centers numbers in tile both horizontally and vertically */
+  width: 90px;
+  height: 90px;
+  font-size: 40pt;
+  border: 5px black solid;
+  background-image: url("background.jpg");
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+}
+
+.neighbor:hover {
+  color: red;
+  border-color: red;
+  cursor: pointer;
+}
